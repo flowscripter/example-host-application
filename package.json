@@ -1,0 +1,32 @@
+{
+  "name": "@flowscripter/example-host-application",
+  "description": "Example host application for the https://github.com/flowscripter/dynamic-plugin-framework",
+  "repository": "@flowscripter/example-host-application",
+  "license": "MIT",
+  "keywords": [
+    "bun",
+    "example",
+    "plugin",
+    "framework",
+    "dynamic",
+    "import",
+    "executable",
+    "cli"
+  ],
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@flowscripter/dynamic-plugin-framework": "^1.3.8",
+    "@flowscripter/example-plugin-api": "^1.0.0"
+  }
+}
