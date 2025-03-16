@@ -13,12 +13,16 @@ import {
  */
 export async function exampleHostApplication(): Promise<void> {
   const pluginRepository = new UrlListPluginRepository(
-    new Set(["file:///Users/nick/projects/flowscripter/example-plugin/bundle/index.js"]),
+    new Set([
+      "file:///Users/nick/projects/flowscripter/example-plugin/bundle/index.js",
+    ]),
   );
 
   const pluginManager = new DefaultPluginManager([pluginRepository]);
 
-  console.info(`Registering extensions for ${EXTENSION_POINT_1} extension point`);
+  console.info(
+    `Registering extensions for ${EXTENSION_POINT_1} extension point`,
+  );
 
   await pluginManager.registerExtensions(EXTENSION_POINT_1);
 
