@@ -28,7 +28,7 @@ In a terminal:
 
 #### Windows
 
-In PowerShell:
+In PowerShell: **(NOTE: This does not currently work...)**
 
 `curl -fsSL https://raw.githubusercontent.com/flowscripter/example-host-application/main/script/install.ps1 | powershell`
 
