@@ -14,7 +14,10 @@ import {
 export async function exampleHostApplication(): Promise<void> {
   const pluginRepository = new UrlListPluginRepository(
     new Set([
-      "file:///Users/nick/projects/flowscripter/example-plugin/bundle/index.js",
+      {
+        url: "https://unpkg.com/@flowscripter/example-plugin/dist/bundle.js",
+        extensionPoints: [EXTENSION_POINT_1],
+      },
     ]),
   );
 
@@ -66,5 +69,7 @@ export async function exampleHostApplication(): Promise<void> {
     console.info("Invoking extension");
 
     extension.sayHello();
+  } else {
+    throw new Error("No extensions found");
   }
 }
