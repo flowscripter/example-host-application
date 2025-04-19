@@ -1,7 +1,11 @@
 {
   "name": "@flowscripter/example-host-application",
+  "homepage": "https://github.com/flowscripter/example-host-application#readme",
   "description": "Example host application for the https://github.com/flowscripter/dynamic-plugin-framework",
-  "repository": "@flowscripter/example-host-application",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowscripter/example-host-application.git"
+  },
   "license": "MIT",
   "keywords": [
     "bun",
