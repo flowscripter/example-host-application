@@ -4,14 +4,14 @@
     "": {
       "name": "@flowscripter/example-host-application",
       "dependencies": {
-        "@flowscripter/dynamic-plugin-framework": "latest",
-        "@flowscripter/example-plugin-api": "latest",
+        "@flowscripter/dynamic-plugin-framework": "^1.3.18",
+        "@flowscripter/example-plugin-api": "^1.0.8",
       },
       "devDependencies": {
-        "@types/bun": "latest",
+        "@types/bun": "^1.2.10",
       },
       "peerDependencies": {
-        "typescript": "latest",
+        "typescript": "^5.8.3",
       },
     },
   },
