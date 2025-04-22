@@ -3,7 +3,6 @@
 [![version](https://img.shields.io/github/v/release/flowscripter/example-host-application?sort=semver)](https://github.com/flowscripter/example-host-application/releases)
 [![build](https://img.shields.io/github/actions/workflow/status/flowscripter/example-host-application/release-bun-executable.yml)](https://github.com/flowscripter/example-host-application/actions/workflows/release-bun-executable.yml)
 [![coverage](https://codecov.io/gh/flowscripter/example-host-application/branch/main/graph/badge.svg?token=EMFT2938ZF)](https://codecov.io/gh/flowscripter/example-host-application)
-[![docs](https://img.shields.io/badge/docs-API-blue)](https://flowscripter.github.io/example-host-application/index.html)
 [![license: MIT](https://img.shields.io/github/license/flowscripter/example-host-application)](https://github.com/flowscripter/example-host-application/blob/main/LICENSE)
 
 > Example host application executable for the
@@ -71,23 +70,11 @@ Lint:
 
 `deno lint index.ts src/ tests/`
 
-Generate HTML API Documentation:
-
-`deno doc --html --name=example-host-application index.ts`
-
 ## Documentation
-
-### Framework API
 
 Refer to the
 [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework)
 for an overview of what this example is demonstrating.
-
-### API
-
-Link to auto-generated API docs:
-
-[API Documentation](https://flowscripter.github.io/example-host-application/index.html)
 
 ## License
 
