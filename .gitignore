@@ -179,3 +179,4 @@ template-bun-executable
 functional_tests/features/support/__pycache__
 example-host-application
 functional_tests/.venv
+.claude

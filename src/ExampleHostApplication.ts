@@ -1,7 +1,4 @@
-import {
-  EXTENSION_POINT_1,
-  type ExtensionPoint1,
-} from "@flowscripter/example-plugin-api";
+import { EXTENSION_POINT_1, type ExtensionPoint1 } from "@flowscripter/example-plugin-api";
 import {
   DefaultPluginManager,
   type ExtensionInfo,
@@ -23,21 +20,16 @@ export async function exampleHostApplication(): Promise<void> {
 
   const pluginManager = new DefaultPluginManager([pluginRepository]);
 
-  console.info(
-    `Registering extensions for ${EXTENSION_POINT_1} extension point`,
-  );
+  console.info(`Registering extensions for ${EXTENSION_POINT_1} extension point`);
 
   await pluginManager.registerExtensions(EXTENSION_POINT_1);
 
   console.info("Registered extensions:");
 
-  const extensionInfos = await pluginManager.getRegisteredExtensions(
-    EXTENSION_POINT_1,
-  );
+  const extensionInfos = await pluginManager.getRegisteredExtensions(EXTENSION_POINT_1);
 
   extensionInfos.forEach((extensionInfo: ExtensionInfo) => {
-    let extensionInfoString =
-      `extensionHandle: ${extensionInfo.extensionHandle}\n`;
+    let extensionInfoString = `extensionHandle: ${extensionInfo.extensionHandle}\n`;
 
     if (extensionInfo.extensionData) {
       extensionInfoString += `extensionData:\n`;
@@ -58,13 +50,10 @@ export async function exampleHostApplication(): Promise<void> {
   if (extensionInfos.length > 0) {
     console.info("Instantiating first extension");
 
-    const extension = await pluginManager.instantiate(
+    const extension = (await pluginManager.instantiate(
       extensionInfos[0].extensionHandle,
-      new Map([[
-        "host_foo",
-        "host_bar",
-      ]]),
-    ) as ExtensionPoint1;
+      new Map([["host_foo", "host_bar"]]),
+    )) as ExtensionPoint1;
 
     console.info("Invoking extension");
 
