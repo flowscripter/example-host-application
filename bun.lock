@@ -5,16 +5,16 @@
     "": {
       "name": "@flowscripter/example-host-application",
       "dependencies": {
-        "@flowscripter/dynamic-plugin-framework": "latest",
-        "@flowscripter/example-plugin-api": "latest",
+        "@flowscripter/dynamic-plugin-framework": "^1.6.0",
+        "@flowscripter/example-plugin-api": "^1.2.4",
       },
       "devDependencies": {
-        "@types/bun": "latest",
-        "oxfmt": "latest",
-        "oxlint": "latest",
+        "@types/bun": "^1.3.14",
+        "oxfmt": "0.54.0",
+        "oxlint": "1.69.0",
       },
       "peerDependencies": {
-        "typescript": "latest",
+        "typescript": "^6.0.3",
       },
     },
   },
