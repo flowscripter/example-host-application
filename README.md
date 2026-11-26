@@ -73,6 +73,11 @@ Refer to the
 [dynamic-plugin-framework](https://github.com/flowscripter/dynamic-plugin-framework)
 for an overview of what this example is demonstrating.
 
+## Design Records
+
+- [Architecture decision records](design/adr/) for decisions specific to this repo
+- [Change specs and plans](design/changes/) from the agentic development workflow
+
 ## License
 
 MIT © Flowscripter
